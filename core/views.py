@@ -22,3 +22,9 @@ def sign_up(request):
 
 	context = {'form': form}
 	return render(request, 'registration/signup.html', context=context)
+
+
+def assign_book(request):
+	
+
+	return render(request, "book_assign.html")
