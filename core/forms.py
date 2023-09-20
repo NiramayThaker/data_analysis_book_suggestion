@@ -12,7 +12,7 @@ class UserRegistrationForm(UserCreationForm):
 		fields = fields = ['username',  'email', 'password1', 'password2']
 
 
-class BookAssignForm(forms.Form):
+class BookAssignForm(forms.ModelForm):
 	class Meta:
 		model = BookAssigned
 		fields = "__all__"
